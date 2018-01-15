@@ -1,8 +1,8 @@
 function keyDrumKitDown(e) {
     const key = e.keyCode;
     const drum = document.querySelector(`.key[data-key="${key}"]`);
-    if(!drum) return;
-    const sound = document.querySelector(`sound[data-key="${key}"]`);
+    const sound = document.querySelector(`audio[data-key="${key}"]`);
+    if(!drum || !sound) return;    
     sound.play();
 }
 
