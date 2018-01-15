@@ -3,6 +3,7 @@ function keyDrumKitDown(e) {
     const drum = document.querySelector(`.key[data-key="${key}"]`);
     const sound = document.querySelector(`audio[data-key="${key}"]`);
     if(!drum || !sound) return;    
+    sound.currentTime = 0;
     sound.play();
 }
 
