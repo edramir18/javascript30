@@ -1,61 +1,71 @@
-:root{
-    --drumkit-width: calc(7.8rem * 3 + 1rem);
+*, *::after, *::before,
+*:before, *:after {
+    box-sizing: border-box;
 }
 
 html {
     font-size: 10px;
     line-height: 1.5;
 }
+
 body{
     margin: 0;
     padding: 0;
 }
+
 kbd {
     font-size: 4rem;
     display: block;
 }
+
 .container{
     display: grid;
-    grid-template-columns: 1fr var(--drumkit-width) 1fr;
-    grid-template-rows: 4.5rem 1fr 2.4rem;
-    background-color: silver;
+    grid-template-columns: 1fr 27.4rem 1fr;
+    grid-template-rows: 4rem 1fr 2.4rem;
     min-height: 100vh;    
 }
+
 .title {
-    font-size: 3rem;    
+    font-size: 2rem;
+    line-height: 4rem;
     text-align: center;
     padding: 0;
     margin: 0;
     grid-column: 1 / 4;
     grid-row-start: 1;
-    text-overflow: ellipsis;
+    background-color: silver;
 }
+
 .main {    
-    background-color: blue;
-    display: block;    
     grid-column-start: 2;
     grid-row: 2; 
     align-self: center;
 }
+
 .footer{
-    margin-left: 1rem;
+    padding-left: 1rem;
     font-size: 1.6rem;
     grid-column: 1 / 4;
-    grid-row-start: -1;
+    grid-row-end: -1;
+    background-color: silver;
 }
+
 .keys {
     display: grid;
-    width: var(--drumkit-width);
-    grid-template-columns: repeat(3, 7.8rem);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 8.8rem);
+    grid-template-rows: repeat(3, 8.8rem);
     grid-gap: 0.5rem;
-    background-color: orange;
-
-}
-.key {
-    text-align: center;    
     background-color: yellow;
 }
+
+.key {
+    text-align: center;
+    color: white;
+    background-color: blue;
+    border-radius: .5rem;
+    border: .5em solid orange;
+}
+
 .sound {
     font-size: 1.2rem;
     text-transform: uppercase;
