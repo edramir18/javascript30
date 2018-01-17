@@ -1,5 +1,7 @@
 # DAY 2 - JS and CSS Clock
-Create a clock with JS and Clock
+Create a clock with JS and Clock.
+
+Include fix to deal with the last transition before return to 0 degrees.
 
 ## Webbos Repository
 [Day 2](https://github.com/wesbos/JavaScript30/tree/master/02%20-%20JS%20and%20CSS%20Clock)
