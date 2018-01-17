@@ -7,8 +7,10 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
-  background-color: orange; }
+  padding: 0; }
+
+body {
+  background-color: olivedrab; }
 
 .flex {
   display: flex; }
@@ -32,18 +34,20 @@ body {
   height: 6px;
   position: absolute;
   top: 50%;
-  transform: rotate(0deg);
-  transform-origin: 100%; }
+  transform: rotate(90deg); }
   .hand--hour {
-    width: 30%;
+    width: 40%;
     margin-left: 20%;
+    transform-origin: 75%;
     background-color: #444444; }
   .hand--minute {
-    width: 40%;
-    margin-left: 10%;
-    background-color: #888888; }
-  .hand--second {
     width: 50%;
+    margin-left: 10%;
+    transform-origin: 80%;
+    background-color: #666666; }
+  .hand--second {
+    width: 60%;
+    transform-origin: 83.33%;
     background-color: #000000; }
 
 /*# sourceMappingURL=styles.css.map */

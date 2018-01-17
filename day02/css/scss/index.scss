@@ -1,5 +1,9 @@
 @import "normalize";
 
+body{
+    background-color: olivedrab;
+}
+
 .flex{   
     display: flex;
 }
@@ -29,20 +33,22 @@
     height:6px;
     position: absolute;
     top:50%;
-    transform: rotate(0deg);
-    transform-origin: 100%;    
+    transform: rotate(90deg);    
     &--hour{
-        width: 30%;
+        width: 40%;
         margin-left: 20%;
-        background-color: #444444;        
+        transform-origin: 75%;
+        background-color: #444444;
     }
     &--minute{
-        width: 40%;
+        width: 50%;
         margin-left: 10%;
-        background-color: #888888;
+        transform-origin: 80%;
+        background-color: #666666;
     }
     &--second{
-        width: 50%;
+        width: 60%;
+        transform-origin: 83.33%;
         background-color: #000000;
     }
   }

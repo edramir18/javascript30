@@ -4,8 +4,8 @@ function updateClock(clock){
     const minute = now.getMinutes();
     const second = now.getSeconds();
 
-    const hourDegrees = (second / 12) * 360 + 90;
-    const minuteDegrees = ((second+30) / 60) * 360 + 90;
+    const hourDegrees = (hour / 12) * 360 + 90;
+    const minuteDegrees = (minute / 60) * 360 + 90;
     const secondDegrees = (second / 60) * 360 + 90;
 
     clock.hour.style.transform = `rotate(${hourDegrees}deg)`;
@@ -20,6 +20,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
         "minute": document.querySelector('.hand--minute'),
         "second": document.querySelector('.hand--second')
     };
-    //setInterval(updateClock, 1000, clock);
-    //updateClock(clock);
+    setInterval(updateClock, 1000, clock);
+    updateClock(clock);
 }, false);
