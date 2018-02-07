@@ -1,0 +1,17 @@
+:root {
+  --base: #000000;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+.title {
+  color: var(--base);
+}
+
+img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
