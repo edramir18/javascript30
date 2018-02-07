@@ -3,13 +3,14 @@
   --spacing: 10px;
   --blur: 10px;
 }
-.title{
+
+.title {
   color: var(--base);
 }
 
 img {
   width: 100%;
-  box-sizing: border-box;  
+  box-sizing: border-box;
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));

@@ -7,3 +7,5 @@ How to use CSS variables and updated from javascript
 ## Documentation
 - [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)
 - [Element Dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset)
+- [Filters](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
+- [Root Element](https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement)

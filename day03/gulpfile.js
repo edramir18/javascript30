@@ -27,6 +27,6 @@ function serveTask () {
     server: './public'
   })
   gulp.watch('./src/scss/*.scss', ['sass'])
-  gulp.watch('./public/js/*.js').on('change', browserSync.reload())
-  gulp.watch('./public/*.html').on('change', browserSync.reload())
+  gulp.watch('./public/js/*.js').on('change', browserSync.reload)
+  gulp.watch('./public/*.html').on('change', browserSync.reload)
 }
